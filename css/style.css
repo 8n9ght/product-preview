@@ -47,7 +47,8 @@ body {
     font-weight: 500;
     display: inline-flex;
     flex-wrap: wrap;
-    row-gap: 15px;
+    row-gap: 5%;
+    line-height: 24px;
 }
 
 .content__heading {
@@ -59,6 +60,7 @@ body {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', sans-serif;
     font-size: 2rem;
+    line-height: 2rem;
 }
 
 .pricing {
@@ -110,4 +112,37 @@ body {
 a {
     text-decoration: none;
     color: hsl(227, 13%, 30%);
+}
+
+@media screen and (min-width:1440px){
+    .container {
+        height: 70%;
+        width: 45%;
+        flex-direction: row;
+    }
+
+    .product__preview {
+        height: 100%;
+        width: 55%;
+        border-radius: .5rem 0 0 .5rem;
+        background-image: url('../images/image-product-desktop.jpg');
+    }
+
+    .content__heading {
+        letter-spacing: 4px;
+    }
+
+    .title{
+        font-size: 2.2rem;
+    }
+
+    .content {
+        width: 40%;
+        padding: 5%;
+    }
+
+    .button {
+        height: 12%;
+        border-radius: .5rem;
+    }
 }
